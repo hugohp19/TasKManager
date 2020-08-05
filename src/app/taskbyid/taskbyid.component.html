@@ -1,0 +1,22 @@
+<link rel="import" type="text/css" href="../../styles.css">
+<div>
+    <h2 class="title">Edit Task</h2>
+</div>
+<div class="container-taskbyid">
+    <div class="maindiv" *ngIf="isDataAvailable">
+        <form [formGroup]="taskById">
+            <h2>Id:</h2>
+            <input class="taskId" type="text" formControlName="id" 
+            [(ngModel)]= 'taskInfo.id' disabled><br><br>
+            <h2>Task Description:</h2>
+            <input class="taskDesc" type="text" maxlength = "200" formControlName="title" 
+            [(ngModel)]= 'taskInfo.title'><br><br>
+            <h2 class="h2done">Task completed?</h2> <input class="checkbox" type="checkbox" formControlName="completed" [(ngModel)]= 'taskInfo.completed'>
+        </form>
+    </div>
+    <div class="buttons">
+        <button class="updatebutton" (click)='updateTask(taskById)'>Update Task</button>
+        <br><br>
+        <button class="deletebutton" (click)='deleteTaskById(taskById)'>Delete Task</button>
+    </div>
+</div>

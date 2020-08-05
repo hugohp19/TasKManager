@@ -1,0 +1,67 @@
+.title{
+    margin-top: -10px;
+    font-size: 25px;
+    color: rgb(245, 71, 71);
+    text-align: center;
+    margin-left: -135px;
+}
+
+.errorMsg{
+    color:red;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.trash:hover{
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.editbutton:hover{
+    color: lightgreen;
+    font-size: 16px;
+}
+
+.addbuttondiv{
+    text-align: center;
+}
+
+.addbutton{
+    color: lightblue;
+}
+.addbutton:hover{
+    color: darkgreen;
+    font-size: 18px;
+}
+
+.inputallView{
+    border: none;
+    width: 100%;
+}
+
+.dynamicAddButton{
+    background-color: lightblue;
+    color: black;
+}
+
+.addbuttoncontainer{
+    text-align: center;
+}
+
+.addTask{
+    cursor: pointer;
+}
+
+.addTask:hover{
+    width: 2em;
+    height: 2em;
+}
+
+.instructions>h5{
+    font-size: 13px;
+    color: lightgray;
+}
+.winAndmac{
+    color: gray;
+}

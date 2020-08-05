@@ -1,0 +1,85 @@
+.title{
+    margin-top: -10px;
+    margin-left: -150px;
+    font-size: 25px;
+    color: rgb(33, 184, 33);
+    text-align: center;
+}
+
+.container-taskbyid{
+    margin-top: -5px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.maindiv{
+    grid-column-start: 1;
+    margin: 10px;
+}
+
+.buttons{
+    grid-column-start: 2;
+    margin: auto;
+}
+
+.taskId, .taskDesc{
+    height: 30px;
+    font-size: 15px;
+    border: 2px solid #b3c6e4;
+    border-radius: 5px;
+    color: black;
+
+}
+
+input[type=text]:focus, .taskDesc:focus{
+    background-color: #dae4f0;
+}
+
+.taskId{
+    width: 40px;
+    text-align: center;
+    background-color: #deeaf8;
+}
+
+.taskDesc{
+    width: 100%;
+    resize: vertical;
+    text-justify: distribute;
+    height: 50px;
+}
+
+button{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.h2done{
+    display: inline-block;
+}
+.checkbox{
+    display: inline-block;
+    margin-left: 10px;
+    zoom:1.4;
+}
+
+.updatebutton, .deletebutton{
+    -webkit-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.updatebutton:hover, .deletebutton:hover{
+    width: 110px;
+    height: 45px;
+}

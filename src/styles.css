@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+button{
+
+}
+.updatebutton, .deletebutton{
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+.updatebutton{
+    background-color:rgb(111, 179, 111);
+    color: white;
+}
+
+.deletebutton{
+    background-color:red;
+    color: white;
+}

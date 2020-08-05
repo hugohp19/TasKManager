@@ -1,0 +1,14 @@
+<link rel="import" type="text/css" href="../../styles.css">
+<div>
+    <h2 class="title">Add Task</h2>
+</div>
+<div class="maindivcreate">
+    <form [formGroup]="todos">
+        <h2>Insert New Task</h2>
+        <!-- <input type="text" formControlName='title' placeholder="Task Description"><br><br> -->
+
+        <textarea type="text" formControlName='title' placeholder="Task Description" maxlength = "200"></textarea><br>
+
+        <button class="updatebutton" (click)='createTask(todos)'>Add</button>
+    </form>
+</div>

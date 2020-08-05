@@ -1,0 +1,45 @@
+/* .maindivcreate{
+    text-align: center;
+} */
+
+.title{
+    margin-top: -10px;
+    margin-left: -150px;
+    font-size: 25px;
+    color: green;
+    text-align: center;
+}
+
+textarea[type=text]:focus{
+    background-color: #dae4f0;
+}
+
+textarea{
+    width: 370px;
+    height: 100px;
+    resize: none;
+    text-align: justify;
+    padding: 5px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+}
+
+button{
+    margin-left: 0px;
+}
+
+h2{
+    font-size: 20px;
+    color: rgb(228, 150, 4);
+}
+
+.updatebutton:hover{
+    width: 110px;
+    height: 45px;
+}
+
+.updatebutton{
+    -webkit-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+}

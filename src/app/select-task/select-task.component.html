@@ -1,0 +1,29 @@
+<link rel="import" type="text/css" href="../../styles.css">
+<div>
+    <h2 class="title">View Task</h2>
+</div>
+<div class="maindivselecttask">
+    <form>
+        <h2>Id:</h2>
+        <input class="taskId" type="number" [(ngModel)] = 'test' name='idinput'>
+
+        <button class="updatebutton" (click)='getTaskById()'>Get Task</button>
+        <div *ngIf='buttonClicked && taskInfo.id'>  <!-- prevent output when no id -->
+            <br>
+            <h3>Description: </h3>
+            <h4>{{taskInfo.title}}</h4>
+            <h3>Completed: </h3>
+            <div class="taskComp" *ngIf=(taskInfo.completed)>
+                <input class="taskDesc" type="checkbox" value={{taskInfo.completed}} checked>
+            </div>
+            <div class="taskComp" *ngIf=!(taskInfo.completed)>
+                <input class="taskDesc" type="checkbox" value={{taskInfo.completed}}>
+            </div>
+        </div>
+        <!-- || (!buttonClicked && !taskInfo.id)'> -->
+        <div class = "errorMsg" *ngIf='!buttonClicked && inputError'>
+            {{inputError}}
+        </div>
+
+    </form>
+</div>

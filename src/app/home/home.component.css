@@ -1,0 +1,35 @@
+h2{
+    margin-top: -10px;
+    font-size: 25px;
+    text-align: center;
+    color:rgb(235, 211, 0);
+}
+
+.message{
+    color: red;
+    font-size: 15px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 15px;
+}
+
+.containerhome{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+.leftconatainer{
+    grid-column-start: 1;
+    text-align: center;
+}
+
+.rightconatainer{
+    grid-column-start: 2;
+    text-align: center;
+}
