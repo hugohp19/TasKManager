@@ -29,7 +29,7 @@ export class TasksService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpCli.get<IndTaskInterface>('http://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos/' + id, httpHead);
+    return this.httpCli.get<IndTaskInterface>('https://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos/' + id, httpHead);
   }
 
   postTask(todoForm): Observable<string>{
@@ -39,7 +39,7 @@ export class TasksService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpCli.post<string>('http://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos', todoForm, httpHead);
+    return this.httpCli.post<string>('https://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos', todoForm, httpHead);
   }
   
   patchTask(id): Observable<string>{
@@ -49,7 +49,7 @@ export class TasksService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpCli.patch<string>('http://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos/' + id, httpHead);
+    return this.httpCli.patch<string>('https://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos/' + id, httpHead);
   }
 
 
@@ -60,11 +60,11 @@ export class TasksService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpCli.put<string>('http://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos', todoForm, httpHead);
+    return this.httpCli.put<string>('https://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos', todoForm, httpHead);
   }
 
   deleteTodos(todoForm): Observable<string>{
-    let url:string = 'http://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos/'+todoForm;
+    let url:string = 'https://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos/'+todoForm;
     const options: object = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
