@@ -19,7 +19,7 @@ export class TasksService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpCli.get<string[]>('http://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos', httpHead);
+    return this.httpCli.get<string[]>('https://ec2-54-175-137-78.compute-1.amazonaws.com:8080/todos', httpHead);
   }
 
   getTaskByIdServ(id): Observable<IndTaskInterface>{
